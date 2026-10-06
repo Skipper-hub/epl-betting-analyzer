@@ -1,0 +1,82 @@
+python -m src.models.run_backtest
+Loading features...
+Train: 1140 matches  |  Test: 760 matches
+  Train seasons: ['2020/21', '2021/22', '2022/23']
+  Test seasons:  ['2023/24', '2024/25']
+
+Loading trained model...
+
+############################################################
+# BACKTEST: STRICT  (edge ≥ 10%)
+############################################################
+  Match    0 | Bankroll:   9,844.57 | Bets: 1
+  Match  100 | Bankroll:   5,013.98 | Bets: 71
+  Match  200 | Bankroll:   4,322.16 | Bets: 147
+  Match  400 | Bankroll:   1,878.69 | Bets: 293
+  Match  500 | Bankroll:   1,158.97 | Bets: 365
+  Match  600 | Bankroll:     616.59 | Bets: 434
+  Match  700 | Bankroll:     701.14 | Bets: 510
+
+→ Bet log saved: results/backtest_strict.csv
+
+============================================================
+BACKTEST SUMMARY
+============================================================
+Total matches walked:  (see above)
+Bets placed:           551
+Wins / Losses:         128 / 423
+Win rate:              23.2%
+Average edge:          47.12%
+Total staked:          KSh    34,448.53
+Net profit (after tax): KSh    -9,303.86
+ROI:                   -27.01%
+Final bankroll:        KSh       696.14
+Starting bankroll:     KSh    10,000.00
+Growth:                -93.04%
+
+--- By outcome bet on ---
+  H:  187 bets | win rate 26.2% | ROI -23.4%
+  D:   74 bets | win rate 27.0% | ROI -1.0%
+  A:  290 bets | win rate 20.3% | ROI -36.4%
+
+--- By season ---
+  2023/24:  276 bets | ROI -27.6% | Net KSh  -7,720.22
+  2024/25:  275 bets | ROI -24.6% | Net KSh  -1,583.64
+
+############################################################
+# BACKTEST: LOOSE  (edge ≥ 5%)
+############################################################
+  Match    0 | Bankroll:   9,844.57 | Bets: 1
+  Match  100 | Bankroll:   4,580.10 | Bets: 88
+  Match  200 | Bankroll:   3,608.53 | Bets: 176
+  Match  300 | Bankroll:   1,900.54 | Bets: 258
+  Match  400 | Bankroll:   1,251.82 | Bets: 342
+  Match  500 | Bankroll:     617.99 | Bets: 428
+  Match  600 | Bankroll:     300.78 | Bets: 505
+  Match  700 | Bankroll:     378.30 | Bets: 586
+
+→ Bet log saved: results/backtest_loose.csv
+
+============================================================
+BACKTEST SUMMARY
+============================================================
+Total matches walked:  (see above)
+Bets placed:           633
+Wins / Losses:         159 / 474
+Win rate:              25.1%
+Average edge:          41.95%
+Total staked:          KSh    34,566.63
+Net profit (after tax): KSh    -9,524.80
+ROI:                   -27.55%
+Final bankroll:        KSh       475.20
+Starting bankroll:     KSh    10,000.00
+Growth:                -95.25%
+
+--- By outcome bet on ---
+  H:  223 bets | win rate 29.1% | ROI -20.3%
+  D:   83 bets | win rate 25.3% | ROI -10.5%
+  A:  327 bets | win rate 22.3% | ROI -37.5%
+
+--- By season ---
+  2023/24:  323 bets | ROI -28.3% | Net KSh  -8,483.46
+  2024/25:  310 bets | ROI -22.5% | Net KSh  -1,041.34

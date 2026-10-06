@@ -1,0 +1,43 @@
+python -m src.models.run_backtest
+Loading features...
+Train: 1140 matches  |  Test: 760 matches
+  Train seasons: ['2020/21', '2021/22', '2022/23']
+  Test seasons:  ['2023/24', '2024/25']
+
+Loading trained model...
+
+############################################################
+# BACKTEST: NO_AWAY
+#   min_abs_diff=0.05  odds range=[2.0, 5.0]  model_prob range=[0.3, 0.6]
+#   ALLOWED OUTCOMES: H + D only (no away bets)
+############################################################
+
+→ Bet log saved: results/backtest_no_away.csv
+
+============================================================
+BACKTEST SUMMARY
+============================================================
+Bets placed:            101
+Wins / Losses:          33 / 68
+Win rate:               32.7%
+Average abs_diff:       +0.091
+Average odds:           3.40
+Total staked:           KSh    23,388.39
+Net profit (after tax): KSh    -2,490.53
+ROI:                    -10.65%
+Final bankroll:         KSh     7,509.47
+Growth:                 -24.91%
+
+--- By outcome bet on ---
+  H:   92 bets | win rate 32.6% | ROI -12.0%
+  D:    9 bets | win rate 33.3% | ROI +5.3%
+  A: no bets
+
+--- By season ---
+  2023/24:   46 bets | ROI +3.4% | Net KSh     418.40
+  2024/25:   55 bets | ROI -25.9% | Net KSh  -2,908.93
+
+--- By odds bucket ---
+  (2, 3]:   39 bets | win rate 38.5% | ROI -17.4%
+  (3, 4]:   38 bets | win rate 36.8% | ROI +16.5%
+  (4, 5]:   24 bets | win rate 16.7% | ROI -39.3%
